@@ -1,0 +1,127 @@
+<!DOCTYLE html>
+<head>
+  <title>Mock Google Home Page</title>
+  <style>
+body {
+  font-family: Arial, san-serif;
+  font-size: 14px;
+}
+
+#google-navbar {
+  display: block;
+}
+
+#google-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#google-logo {
+  padding: 15px;
+  margin: 50px auto;
+}
+
+li {
+  display: inline;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#google-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: 75vh;
+}
+
+.search-bar {
+  border: 1px solid #dfe1e5;
+  border-radius: 25px;
+  width: 582px;
+  height: 44px;
+  display: flex;
+}
+
+.search-bar-field {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  border: none;
+  margin-left: 30px;
+  width: 90%;
+  height: 25px;
+  align-self: center;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px;
+  margin: 25px 5px;
+  border: none;
+  border-radius: 5px;
+  color: #5F6368;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  border: 0.5px solid gray;
+}
+
+.footer-links {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer-links li {
+  padding: 0px auto;
+}
+</style> 
+</head>
+<body>
+  <nav id="google-navbar">
+    <ul>
+      <li style="float:left;"><a href="#about">About</a></li>
+      <li style="float:left;"><a href="#store">Store</a></li>
+      <li style="float:right;"><a href="#gmail">Gmail</a></li>
+      <li style="float:right;"><a href="#images">Images</a></li>
+    </ul>
+    </nav>
+  <section>
+    <div id="google-search-container">
+      <a href="https://google.com"><img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></a>
+      <form id="google-search-field">
+        <label for="search"></label>
+        <div class="search-bar"><input type="text" id="search" class="search-bar-field" name="search"><br></div>
+        <a href="#google-search"><input type="submit" id="submit" class="search-button" value="Google Search"></a> 
+        <a href="#google-search"><input type="submit" id="submit" class="search-button" value="I'm Feeling Lucky"></a>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <nav class="footer-links">
+      <ul>
+        <li style="float:left;"><a href="">Advertising</a></li>
+        <li style="float:left;"><a href="">Business</a></li>
+        <li style="float:left;"><a href="">How Search works</a></li>
+        <li style="float:right;"><a href="">Privacy</a></li>
+        <li style="float:right;"><a href="">Terms</a></li>
+        <li style="float:right;"><a href="">Settings</a></li>
+    </nav>
+</body>
+</html>
